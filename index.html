@@ -13,6 +13,10 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="">
 
+        <!--==================== AOS ANIMATION =================-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+
         <title>Portfolio | David Sarria</title>
     </head>
     <body>
@@ -67,21 +71,24 @@
             </nav>
         </header>
 
-        <!--================lllllll==== MAIN ====================-->
+        <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="#" target="_blank" class="home__social-icon">
+                            <a href="https://www.linkedin.com/in/david-sarria/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
-                            <a href="#" target="_blank" class="home__social-icon">
+                            <a href="https://www.instagram.com/juandasports7/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-instagram"></i>
                             </a>
                             <a href="https://github.com/SarriaFreelancer" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://app.aluracursos.com/emprega-one/profile/davidjuanmontano7" target="_blank" class="home__social-icon">
+                                <i class="uil uil-bag"></i>
                             </a>
 
                         </div>
@@ -103,10 +110,10 @@
                             </svg>
                         </div>
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'm David Sarria</h1>
-                            <h3 class="home__subtitle">Full Stack Developer</h3>
+                            <h1 class="home__title">Hi, I'm <span class="name">David Sarria</span></h1>
+                            <h3 class="home__subtitle">I'm <span class="typing">Full Stack developer</span></h3>
                             <p class="home__description">I have experience developing full web applications and designing them.</p>
-                            <a href="#contact" class="button button--flex">
+                            <a data-aos="fade-up" href="#contact" class="button button--flex">
                                Contact Me <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
@@ -124,11 +131,11 @@
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My introduction</span>
+                <h2 data-aos="flip-up" class="section__title">About Me</h2>
+                <span data-aos="flip-up" class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <img data-aos="fade-up" src="assets/img/about.jpg" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
@@ -150,7 +157,9 @@
                             </div>
                         </div>
 
-                        <div class="about__buttons">
+                        <div class="about__buttons" data-aos="flip-left"
+                                                    data-aos-easing="ease-out-cubic"
+                                                    data-aos-duration="2000">
                             <a download="" href="assets/pdf/David-Cv.pdf" class="button button--flex">
                               Download cv  <i class="uil uil-download-alt button__icon"></i>
                             </a>
@@ -163,14 +172,14 @@
             <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
-                <div class="skills__container container grid">
+                <div  class="skills__container container grid">
                     <div>
                      <!--==================== SKILLS  1 ====================-->
-                       <div class="skills__content skills__open">
-                            <div class="skills__header">
+                       <div class="skills__content skills__open" >
+                            <div data-aos="fade-up" class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
-                                <div>
+                                <div data-aos="fade-up">
                                     <h1 class="skills__titles">Frontend Developer</h1>
                                     <span class="skills__subtitle">More than 2 years</span>
                                 </div>
@@ -219,13 +228,12 @@
                                     </div>
                                 </div>
 
-
                             </div>
                        </div>
 
                     <!--==================== SKILLS  2 ====================-->
                         <div class="skills__content skills__close">
-                            <div class="skills__header">
+                            <div data-aos="fade-up" class="skills__header">
                                 <i class="uil uil-server-network skills__icon"></i>
 
                                 <div>
@@ -284,8 +292,8 @@
 
                     <div>
                     <!--==================== SKILLS  3 ====================-->
-                         <div class="skills__content skills__close">
-                            <div class="skills__header">
+                         <div  class="skills__content skills__close">
+                            <div data-aos="fade-up" class="skills__header">
                                 <i class="uil uil-swatchbook skills__icon"></i>
 
                                 <div>
@@ -326,12 +334,144 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
 
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification-icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification-icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTEN 1 ====================-->
+                        <div data-aos="flip-left"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000" 
+                             class="qualification__content qualification__active" data-content id="education">
+                              <!--==================== QUALIFICATION 1 ====================-->
+                              <div class="qualification__data">
+                                    <div>
+                                        <h3 class="qualification__title">Information Systems Technologist</h3>
+                                        <span class="qualification__subtitle">Colombia - University of the Valley</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2020 - 2023
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+                              </div>
+
+                              <!--==================== QUALIFICATION 2 ====================-->
+                              <div class="qualification__data">
+                                    <div></div>
+
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="qualification__title">Web Development ICT Mission</h3>
+                                        <span class="qualification__subtitle">Colombia - Technological University of Pereira</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - 2022
+                                        </div>
+                                    </div>
+                              </div>
+                              <!--==================== QUALIFICATION 3 ====================-->
+                              <div class="qualification__data">
+                                    <div>
+                                        <h3 class="qualification__title">Google User Experience (UX) Design</h3>
+                                        <span class="qualification__subtitle">Colombia - Coursera</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - 2023
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+                              </div>
+                              <!--==================== QUALIFICATION 4 ====================-->
+                              <div class="qualification__data">
+                                    <div></div>
+
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <!-- <span class="qualification__line"></span> -->
+                                    </div>
+
+                                    <div>
+                                        <h3 class="qualification__title">Google Information Technology Support</h3>
+                                        <span class="qualification__subtitle">Colombia - Coursera</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - 2022
+                                        </div>
+                                    </div>
+                                    
+                              </div>
+                        </div>
+                        <!--==================== QUALIFICATION CONTEN 2 ====================-->
+                        <div data-aos="flip-right"
+                             data-aos-easing="ease-out-cubic"
+                             data-aos-duration="2000" 
+                             class="qualification__content " data-content id="work" >
+                              <!--==================== QUALIFICATION 1 ====================-->
+                              <div class="qualification__data">
+                                    <div>
+                                        <h3 class="qualification__title">Technological Resources Monitor</h3>
+                                        <span class="qualification__subtitle">Colombia - University of the Valley</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - 2023
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+                              </div>
+
+                              <!--==================== QUALIFICATION 2 ====================-->
+                              <div class="qualification__data">
+                                    <div></div>
+
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <!-- <span class="qualification__line"></span> -->
+                                    </div>
+
+                                    <div>
+                                        <h3 class="qualification__title">Socio-educational Monitor</h3>
+                                        <span class="qualification__subtitle">Colombia - University of the Valley</span>
+                                        <div class="qualification__calendar">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2022 - 2022
+                                        </div>
+                                    </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+                <h1 class="home__title" style="text-align: center;">Hi, <span class="name">soon we will finish</span></h1>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
@@ -359,7 +499,13 @@
         <footer class="footer">
          
         </footer>
+        <!--==================== AOS ANIMATION =================-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
+        <script>
+            AOS.init();
+        </script>
+
         <!--==================== SCROLL TOP ====================-->
         
 
