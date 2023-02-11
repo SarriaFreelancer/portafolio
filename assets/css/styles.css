@@ -495,8 +495,8 @@ row-gap: 1rem;
 .skills__js {
   width: 75%;
 }
-.skills__laravel {
-  width: 90%;
+.skills__react {
+  width: 50%;
 }
 .skills__php {
   width: 80%;
@@ -507,14 +507,12 @@ row-gap: 1rem;
 .skills__mysql {
   width: 90%;
 }
-.skills__html {
+.skills__sqlite {
   width: 90%;
 }
-.skills__html {
-  width: 90%;
-}
-.skills__python {
-  width: 55%;
+
+.skills__laravel {
+  width: 60%;
 }
 .skills__figma {
   width: 70%;
@@ -734,12 +732,13 @@ row-gap: 1rem;
   transform: translateX(.25rem);
 }
 
-/* .swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
-} */
 
-.swiper__portfolio-icon {
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+} 
+
+.swiper-portfolio-icon {
   font-size: 2rem;
   color: var(--first-color);
 }
@@ -756,9 +755,23 @@ row-gap: 1rem;
     bottom: -2.5rem;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination-bullet{
+  position: relative;
+  top: 3rem;
+}
+
+.swiper-pagination-bullet-active{
   background-color: var(--first-color);
 }
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+  outline: none;
+}
+
+
+
 
 
 
