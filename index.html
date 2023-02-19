@@ -64,6 +64,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change butto  -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -92,7 +95,7 @@
                             </a>
 
                         </div>
-                        <div class="home__simg">
+                        <div class="home__img">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -1039,7 +1042,9 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <script>
-            AOS.init();
+            AOS.init({
+                once:true
+            });
         </script>
 
 
